@@ -37,11 +37,23 @@ Permissive
 #     enforcing - SELinux security policy is enforced.
 #     permissive - SELinux prints warnings instead of enforcing.
 #     disabled - No SELinux policy is loaded.
-SELINUX=disable
+SELINUX=disabled
 # SELINUXTYPE= can take one of three values:
 #     targeted - Targeted processes are protected,
 #     minimum - Modification of targeted policy. Only selected processes are protected.
 #     mls - Multi Level Security protection.
 SELINUXTYPE=targeted
 ```
+
+4. rootユーザでのssh禁止
+```
+[setupuser@test-server01 ~]$ sudo vi /etc/ssh/sshd_config
+```
+```
+PermitRootLogin no
+```
+```
+[setupuser@test-server01 ~]$ sudo systemctl restart sshd
+```
+
 
