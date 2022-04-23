@@ -10,3 +10,14 @@ Retype new password:
 passwd: all authentication tokens updated successfully.
 [root@centos7 ~]#
 ```
+
+2. sudo権限を付与
+```
+[root@centos7 ~]# visudo
+```
+
+***
+
+```
+a
+```
