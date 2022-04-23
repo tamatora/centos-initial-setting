@@ -55,5 +55,10 @@ PermitRootLogin no
 ```
 [setupuser@test-server01 ~]$ sudo systemctl restart sshd
 ```
-
-
+5. パッケージの更新
+```
+[setupuser@test-server01 ~]$ sudo yum clean all
+読み込んだプラグイン:fastestmirror
+リポジトリーを清掃しています: base extras updates
+[setupuser@test-server01 ~]$ sudo yum update
+```
