@@ -31,13 +31,15 @@ Enforcing
 Permissive
 
 [setupuser@test-server01 ~]$ sudo vi /etc/sysconfig/selinux
+```
 ***
+```
 # This file controls the state of SELinux on the system.
 # SELINUX= can take one of these three values:
 #     enforcing - SELinux security policy is enforced.
 #     permissive - SELinux prints warnings instead of enforcing.
 #     disabled - No SELinux policy is loaded.
-SELINUX=__disable__
+SELINUX= __disable__
 # SELINUXTYPE= can take one of three values:
 #     targeted - Targeted processes are protected,
 #     minimum - Modification of targeted policy. Only selected processes are protected.
